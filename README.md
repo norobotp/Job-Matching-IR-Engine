@@ -58,3 +58,8 @@ This project is a **location-aware job search engine** developed as part of the 
 - `requirements.txt` dependencies:
   ```bash
   pip install -r requirements.txt
+  ```
+- (Optional) GPT API Key for augmentation:
+  ```bash
+  export OPENAI_API_KEY='your_api_key'
+  ```
