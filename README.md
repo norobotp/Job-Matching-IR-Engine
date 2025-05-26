@@ -63,3 +63,73 @@ This project is a **location-aware job search engine** developed as part of the 
   ```bash
   export OPENAI_API_KEY='your_api_key'
   ```
+---
+
+## 📁 Project Structure
+  ```bash
+├── app.py             # Flask application
+├── pipeline.py        # Query processing and ranking logic
+├── models.py          # Ranking model implementations
+├── web/
+│   └── home.html      # Front-end UI
+├── requirements.txt   # Python dependencies
+└── README.md          # Documentation
+
+  ```
+---
+
+## 🚀 Running the Application
+
+1. Start the Flask server by running the `app.py` file with Python.  
+   For example: run `python app.py` from your terminal.
+
+2. Open a web browser and navigate to:  
+   http://127.0.0.1:8000/
+
+3. Use the search bar to enter a natural language job query.  
+   Example:  
+   "Masters in data science near California offering mentorship and career growth"
+
+---
+
+## 🧪 Usage Guide
+
+### 🧠 How to Write Queries
+You can enter full-sentence queries including:
+- **Skills**: e.g., Python, machine learning, SQL
+- **Job role or degree**: e.g., Data Scientist, Masters, Software Engineer
+- **Location**: e.g., near New York, around California
+- **Perks and culture**: e.g., mentorship, flexible hours, remote options
+
+**Examples:**
+- "Senior software engineer near New York offering flexible remote work"
+- "Data scientist with Python and SQL skills in California with leadership training"
+
+### 🖱️ Interface Behavior
+- Results are ranked by relevance
+- Use “Next” and “Previous” buttons to browse additional pages
+- Click on a job listing to view the original job post
+
+---
+
+## 📌 Query Rules
+
+To get accurate and relevant search results, follow these guidelines:
+
+1. **Use location prepositions** such as:
+   - `near`, `in`, `at`, or `around`
+   - Example:  
+     "Software engineering roles near California with remote options"
+
+2. **Combine multiple filters naturally**:
+   - You can include skills, location, role, company culture, and job perks all in one query.
+   - Example:  
+     "Masters in data science with Python skills in New York offering employee engagement programs"
+
+---
+
+## 🙏 Acknowledgements
+
+- This project was developed for the **SI 650: Information Retrieval** course at the University of Michigan.
+- It combines traditional IR models (like BM25) with neural ranking techniques (e.g., L2R and cross-encoders).
+- The front-end interface is styled using **PureCSS** and minimal JavaScript for responsiveness.
